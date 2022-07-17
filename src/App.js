@@ -1,8 +1,35 @@
 import logo from "./assets/logo.svg";
 import eye from "./assets/eye.svg";
-import "./App.css";
+import "./css/App.css";
+import "./css/Buttons.css";
+import React, { useState } from "react";
+import usePasswordValidtor from "./hooks/hooks.js";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
 
 function App() {
+  const [page, setPage] = useState(1);
+  const [pagename, setPageName] = useState("Next Step");
+  const [mail, setMail] = useState("");
+
+  function reciveMail(obj) {
+
+    setMail(obj);
+  }
+
+  function PageName(page, pagename) {
+    setPage((prev) => prev + 1);
+    if (page == 1) {
+      setPageName("Register");
+    } else if (page == 2) {
+      setPageName("Go to Homepage");
+    }
+  }
+
+  let page1 = page == 1 ? "true" : "none";
+  let page2 = page == 2 ? "true" : "none";
+  let page3 = page == 3 ? "true" : "none";
+
   return (
     <div className="App">
       <div>
@@ -20,42 +47,27 @@ function App() {
             </p> */}
           </p>
         </div>
-        <div className="form-frame">
-          <form className="form">
-            <div className="form">
-              <label className="label">
-                email
-                <div>
-                  <input
-                    className="input"
-                    placeholder="Enter your password"
-                  ></input>
-                </div>
-              </label>
-              <br></br>
-              <label className="label">
-                password
-                <div>
-                  <img src={eye} className="eye-logo" alt="eye" />
-                  <input
-                    className="input"
-                    placeholder="Enter your password"
-                  ></input>
-                </div>
-              </label>
-              <div className="validation-text"></div>
-            </div>
-          </form>
+        <div style={{ display: "none" }}>
+          <Page1 reciveMail={reciveMail}></Page1>
         </div>
-        <div className="buttons-frame">
-        <div className="next-frame">
-          <p className="next-text">Next Step</p>
-        </div>
-        <div className="login-frame">
-          <p className="login-text">Login instead</p>
-        </div>
-        </div>
+        <Page2></Page2>
 
+        <div className="buttons-frame">
+          <button
+            className="button-next"
+            onClick={() => PageName(page, pagename)}
+          >
+            {pagename}
+          </button>
+          {/* <div className="next-frame">
+            <p className="next-text">Next Step</p>
+          </div> */}
+          <button className="button-login">Login instead</button>
+          {/* <div className="login-frame">
+          
+            <p className="login-text">Login instead</p>
+          </div> */}
+        </div>
       </div>
     </div>
   );
