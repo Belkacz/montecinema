@@ -34,29 +34,28 @@ export function usePasswordValidtor(
 }
 
 export function useAgeValidtor(valueOnStart, minAge) {
-  const [value, setValue] = useState(valueOnStart);
+  const [birthDate, setBirthDate] = useState(valueOnStart);
   const [msg, setMsg] = useState(null);
   let today = new Date();
-  let d = value.split("/");
-  let birthDate = new Date(d[2] + "/" + d[1] + "/" + d[0]);
+  let d = birthDate.split("/");
+  let localbirthDate = new Date(d[2] + "/" + d[1] + "/" + d[0]);
 
-  let age = today.getFullYear() - birthDate.getFullYear();
-  let m = today.getMonth() - birthDate.getMonth();
+  let age = today.getFullYear() - localbirthDate.getFullYear();
+  let m = today.getMonth() - localbirthDate.getMonth();
   if (m < 0) {
     age--;
   }
-  if (m === 0 && today.getDate() < birthDate.getDate()) {
+  if (m === 0 && today.getDate() < localbirthDate.getDate()) {
     age--;
   }
 
   return [
-    value,
+    localbirthDate,
     {
-      value,
+      localbirthDate,
       msg,
       onChange: (e) => {
-        setValue(e.target.value);
-        let valuelenght = new String(value);
+        setBirthDate(e.target.value);
         if (age < 18) {
           setMsg("You should be minium 18 years old");
         } else setMsg(null);
