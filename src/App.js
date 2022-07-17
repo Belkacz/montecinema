@@ -2,7 +2,7 @@ import logo from "./assets/logo.svg";
 import eye from "./assets/eye.svg";
 import "./css/App.css";
 import "./css/Buttons.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import usePasswordValidtor from "./hooks/hooks.js";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
@@ -13,7 +13,6 @@ function App() {
   const [mail, setMail] = useState("");
 
   function reciveMail(obj) {
-
     setMail(obj);
   }
 
@@ -29,6 +28,9 @@ function App() {
   let page1 = page == 1 ? "true" : "none";
   let page2 = page == 2 ? "true" : "none";
   let page3 = page == 3 ? "true" : "none";
+  useEffect(() => {
+    console.log(page2)
+  }, [page]);
 
   return (
     <div className="App">
@@ -47,10 +49,12 @@ function App() {
             </p> */}
           </p>
         </div>
-        <div style={{ display: "none" }}>
+        <div style={{ display: page1 }}>
           <Page1 reciveMail={reciveMail}></Page1>
         </div>
-        <Page2></Page2>
+        <div style={{ display: page2 }}>
+          <Page2></Page2>
+        </div>
 
         <div className="buttons-frame">
           <button
@@ -62,7 +66,9 @@ function App() {
           {/* <div className="next-frame">
             <p className="next-text">Next Step</p>
           </div> */}
-          <button className="button-login">Login instead</button>
+          <a href="#" className="button-login">
+            Login instead
+          </a>
           {/* <div className="login-frame">
           
             <p className="login-text">Login instead</p>
