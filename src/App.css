@@ -1,38 +1,326 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 0px 80px;
+
+  width: 375px;
+  height: 900px;
+
+  /* Other / Snow White */
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+.body-frame {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 64px, 24px, 32px;
+  gap: 48px;
+  width: 375px;
+  height: 678px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  gap: 895px;
+
+  width: 375px;
+  height: 98px;
+
+  /* Other / Snow White */
+  background: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-logo {
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  width: 182.6px;
+  height: 37.24px;
+}
+
+.header-frame {
+  width: 302px;
+  height: 82px;
+
+  font-family: "Eczar";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 102%;
+  /* or 41px */
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* Gray / Tuna */
+  color: #343541;
+}
+
+.font--header {
+  width: 302px;
+  height: 82px;
+
+  font-family: "Eczar";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 102%;
+  /* or 41px */
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* Gray / Tuna */
+  color: #343541;
+}
+
+.form-frame {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: 327px;
+  height: 260px;
+}
+.label {
+  /* Label */
+
+  width: 43px;
+  height: 18px;
+
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  /* Red / Bittersweet */
+  color: #f47073;
+}
+
+.input {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+
+  width: 260px;
+  height: px;
+
+  /* Gray / Athens Gray */
+  background: #f7f7f7;
+  border-radius: 8px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Gray / Jumbo */
+  color: #85868d;
+}
+.form {
+  /* Auto layout */
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 327px;
+  height: 86px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.eye-logo {
+  /* view-1 */
+  position: absolute;
+  margin-left: 72%;
+  margin-top: 2%;
+  width: 32px;
+  height: 32px;
+}
+
+.validation-text {
+  width: 140px;
+  height: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.04em;
+
+  /* Gray / Tuna */
+  color: #343541;
+}
+
+.button-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 327px;
+  height: 128px;
+}
+
+.button-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+
+  width: 327px;
+  height: 56px;
+
+  /* Red / Cherry Red */
+  background: #ec1115;
+  border-radius: 64px;
+
+  /* Book a ticket */
+  color: #ffffff;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+}
+.button-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+
+  width: 327px;
+  height: 56px;
+
+  background-color: white;
+
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.015em;
+
+  /* Red / Cherry Red */
+  color: #ec1115;
+}
+
+.login-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+
+  width: 290px;
+  height: 0px;
+
+  border-radius: 64px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.login-text {
+  width: 155px;
+  height: 18px;
+
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.015em;
+
+  /* Red / Cherry Red */
+  color: #ec1115;
+}
+
+.next-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  width: 300px;
+  height: 30px;
+
+  /* Red / Cherry Red */
+  background: #ec1115;
+  border-radius: 64px;
+}
+
+.next-text {
+  width: 100px;
+  height: 18px;
+  margin-left: 10%;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height, or 18px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.015em;
+
+  /* Other / Snow White */
+  color: #ffffff;
+}
+
+.buttons-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 327px;
+  height: 380px;
 }
