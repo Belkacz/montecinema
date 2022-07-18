@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 
 function UserDataPage({ reciveName, pageswap, name }) {
   let minAge = 18;
-  const [firstname, setFName] = useState("");
   const [lastname, setLName] = useState("");
   const [age, setAge] = useState();
   const [msg, setMsg] = useState(null);
@@ -32,19 +30,19 @@ function UserDataPage({ reciveName, pageswap, name }) {
       calcAge--;
     }
 
-    if (calcAge < 18) {
+    if (calcAge < minAge) {
       setMsg("You should be minium 18 years old");
     } else {
       setMsg(null);
     }
   };
   const toggleCheckbox = (e) => {
-    e.preventDefault();
+
     setCheckbox(!checkbox);
   };
 
   useEffect(() => {
-    calculateAge();
+    calculateAge()
   }, [age]);
 
   return (
@@ -126,8 +124,8 @@ function UserDataPage({ reciveName, pageswap, name }) {
           disabled={
             age < 18 ||
             msg != null ||
-            name == "" ||
-            lastname == "" ||
+            name === "" ||
+            lastname === "" ||
             checkbox === false
               ? true
               : false
