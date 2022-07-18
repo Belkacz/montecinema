@@ -80,14 +80,14 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
+  margin: 10px;
   /* Gray / Charade */
   color: #292a33;
 }
 
 @media only screen and (min-width: 1000px) {
   .text18px {
+    padding: 20px;
     margin-top: -50px;
-    margin-left: -500px;
   }
 }

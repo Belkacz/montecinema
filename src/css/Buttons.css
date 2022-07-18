@@ -6,11 +6,8 @@
   justify-content: center;
   align-items: center;
   /* padding: 40px; */
-  gap: 10px;
-  border: 0px;
-  width: 327px;
-  height: 56px;
 
+  padding: 15px 100px 15px 100px;
   background-color: white;
 
   font-family: "Roboto Mono";
@@ -29,14 +26,15 @@
 }
 
 .button-next {
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
-  width: 327px;
-  height: 56px;
+  padding: 15px 110px 15px 110px;
+
+  /* width: 327px;
+  height: 56px; */
 
   /* Red / Cherry Red */
   background: #ec1115;
