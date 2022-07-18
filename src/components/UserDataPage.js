@@ -50,9 +50,10 @@ function UserDataPage({ reciveName, pageswap, name }) {
   return (
     <div>
       <div className="header-frame">
-        <p className="font-header">
-          Great! <p id="breaklinetitle">Now your name</p>
+        <p id="breaklinetittledark" className="font-header">
+          Great!
         </p>
+        <p id="breaklinetitlelight">Now your name</p>
       </div>
       <div className="form-frame">
         <form className="form">

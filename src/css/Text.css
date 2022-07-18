@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@400;700&display=swap");
-#breaklinetitle {
+
+#breaklinetitledark{
+  margin: 0px;
+  padding: 0px;
+}
+#breaklinetitlelight {
   margin: 0px;
   padding: 0px;
   color: grey;
