@@ -35,7 +35,6 @@
   align-items: center;
   padding: 20px;
   gap: 10px;
-
   width: 327px;
   height: 56px;
 
@@ -53,10 +52,10 @@
 }
 
 .checkbox {
-
+  margin-right: 10px;
   box-sizing: border-box;
   
-  width: 24px;
+  width: 25px;
   height: 24px;
 
   border: 0.75px solid #aeaeb3;

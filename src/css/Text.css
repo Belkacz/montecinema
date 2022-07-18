@@ -70,10 +70,8 @@
 }
 
 .text18px {
-  /* We have sent you an email to goerogia.swanson@monterail.com. Make sure to click the link from the message to activate your account. */
-  margin-left: -50px;
-  width: 327px;
 
+  width: 327px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -85,9 +83,9 @@
   color: #292a33;
 }
 
-
 @media only screen and (min-width: 1000px) {
   .text18px {
+    margin-top: -50px;
     margin-left: -500px;
   }
 }

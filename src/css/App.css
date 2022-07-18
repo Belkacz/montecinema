@@ -11,7 +11,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 895px;
   padding: 20px;
 }
 .Logo-txt {
@@ -28,7 +27,6 @@
 }
 
 .header-frame {
-  /* Great! Now your name */
   font-family: "Eczar";
   font-style: normal;
   font-weight: 600;
@@ -37,7 +35,6 @@
   /* or 41px */
   text-align: center;
   letter-spacing: -0.01em;
-  margin: auto;
   /* Gray / Tuna */
   color: #343541;
 }
@@ -54,34 +51,19 @@
   color: #f47073;
 }
 .input {
-  /* Frame 2 */
-  /* Auto layout */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 24px;
-  gap: 10px;
   width: 320px;
+  height: 35px;
 
-  /* Gray / Athens Gray */
   background: #f7f7f7;
   border-radius: 8px;
-
-  /* Frame 102 */
-  align-items: center;
-  padding: 2px;
-  gap: 8px;
-
-  /* Input text */
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  /* identical to box height */
 
-  /* Gray / Jumbo */
   color: #85868d;
 }
 .eye-logo {
@@ -91,51 +73,38 @@
   flex-grow: 0;
   float: right;
   margin-right: 1em;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 .buttons-frame {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0px 0px 0px;
 }
 .chackboxframe {
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 .popup {
-  display: none;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 5px;
-  gap: 35px;
 }
 
 @media only screen and (min-width: 1000px) {
   .popup {
-    align-items: flex-start;
     padding: 64px;
-    gap: 40px;
     background: #ffffff;
     box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
-    border-radius: 24px;
+    border-radius: 25px;
   }
   .header-frame {
-    margin-left: -10px;
-    font-family: "Eczar";
-    font-style: normal;
-    font-weight: 600;
     font-size: 80px;
-    line-height: 102%;
-    /* or 82px */
-    letter-spacing: -0.01em;
   }
   .input-frame {
     margin-left: 8em;
   }
   .eye-logo {
+    margin-top: -38px;
     margin-right: 12em;
   }
   .Logo-txt {
@@ -149,7 +118,7 @@
     margin-left: 7em;
   }
   .buttons-frame {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .input {
     width: 20em;
