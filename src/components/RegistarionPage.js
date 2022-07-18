@@ -76,9 +76,15 @@ function RegistarionPage({ reciveMail, pageswap, mail }) {
             </div>
             <div className="validation-frame">
               <div className="validation-text">
-                <p>{connectPassword.msgletter}</p>
-                <p>{connectPassword.msgnum}</p>
-                <p>{connectPassword.msglenght}</p>
+                <p hidden={connectPassword.msgletter == null}>
+                  {connectPassword.msgletter}
+                </p>
+                <p hidden={connectPassword.msgnum == null}>
+                  {connectPassword.msgnum}
+                </p>
+                <p hidden={connectPassword.msglenght == null}>
+                  {connectPassword.msglenght}
+                </p>
               </div>
             </div>
           </div>
