@@ -1,3 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px, 0px, 80px;
+  width: 375px;
+  height: 900px;
+  border-radius: 32px;
+  margin: auto;
+}
 .App-header {
   display: flex;
   flex-direction: row;
@@ -7,8 +17,7 @@
   gap: 895px;
   width: 375px;
   height: 98px;
-  margin: auto;
-  margin-left: 5em;
+  margin-left: 200px;
 }
 .Logo-txt {
   display: none;
@@ -37,8 +46,7 @@
   /* or 41px */
   text-align: center;
   letter-spacing: -0.01em;
-
-  margin-left: 1em;
+  margin: auto;
   /* Gray / Tuna */
   color: #343541;
 }
@@ -66,8 +74,6 @@ body-frame {
   color: #f47073;
 }
 .input-frame {
-  margin-left: 1em;
-
   gap: 12px;
 }
 .input {
@@ -151,7 +157,6 @@ body-frame {
 
 @media only screen and (min-width: 1000px) {
   .popup {
-    margin-left: 150px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -193,8 +198,8 @@ body-frame {
     width: 200px;
   }
   .App-header {
-    margin-left: 1em;
     gap: 30em;
+    margin-left: -500px;
   }
   .validation-frame {
     margin-left: 7em;
@@ -209,16 +214,11 @@ body-frame {
     width: 20em;
     height: 25px;
   }
-  .header-frame {
-  }
 }
 
 @media only screen and (min-width: 1400px) {
-  .popup {
-    margin-left: 400px;
-  }
   .App-header {
-    margin-left: 15em;
     gap: 40em;
+    margin-left: -550px;
   }
 }

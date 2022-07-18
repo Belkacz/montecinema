@@ -5,9 +5,9 @@ import "./css/Buttons.css";
 import "./css/Text.css";
 import React, { useEffect, useState } from "react";
 import usePasswordValidtor from "./hooks/hooks.js";
-import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
+import Page1 from "./components/RegistarionPage";
+import Page2 from "./components/UserDataPage";
+import Page3 from "./components/ConfirmPage";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -21,9 +21,6 @@ function App() {
   function reciveName(obj) {
     setName(obj);
   }
-  let page1 = page === 1 ? false : true;
-  let page2 = page === 2 ? false : true;
-  let page3 = page === 3 ? false : true;
 
   function pageswap(data) {
     setPage((prev) => prev + 1);

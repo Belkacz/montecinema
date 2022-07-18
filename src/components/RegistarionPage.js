@@ -1,7 +1,7 @@
-import logo from "./assets/logo.svg";
-import eye from "./assets/eye.svg";
+import logo from "../assets/logo.svg";
+import eye from "../assets/eye.svg";
 import React, { useState, useEffect } from "react";
-import { usePasswordValidtor } from "./hooks/hooks.js";
+import { usePasswordValidtor } from "../hooks/hooks.js";
 
 function Page1({ reciveMail, pageswap, mail }) {
   let regexletter = /[a-z]/gi;
