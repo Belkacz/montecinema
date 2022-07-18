@@ -2,10 +2,6 @@
 
 .button-login {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 40px; */
 
   padding: 15px 100px 15px 100px;
   background-color: white;
@@ -16,9 +12,7 @@
   font-size: 18px;
   line-height: 100%;
   /* identical to box height, or 18px */
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.015em;
 
   /* Red / Cherry Red */
@@ -28,14 +22,8 @@
 .button-next {
   white-space: nowrap;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 15px 110px 15px 110px;
-
-  /* width: 327px;
-  height: 56px; */
-
   /* Red / Cherry Red */
   background: #ec1115;
   border-radius: 64px;
