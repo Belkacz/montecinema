@@ -1,10 +1,10 @@
 import logo from "./assets/logo.svg";
 import eye from "./assets/eye.svg";
-import React, { useState } from "react";
-import {usePasswordValidtor} from "./hooks/hooks.js";
+import React, { useState, useEffect } from "react";
+import { usePasswordValidtor } from "./hooks/hooks.js";
 
-function Page1({reciveMail}) {
-  let regexletter = /[a-z]/gi
+function Page1({ reciveMail, pageswap, mail }) {
+  let regexletter = /[a-z]/gi;
   let regexnum = /[0-9]/gi;
   let minlenght = 8;
 
@@ -14,48 +14,95 @@ function Page1({reciveMail}) {
     regexnum,
     minlenght
   );
-  
+  const [passwordShown, setPasswordShown] = useState(false);
+
   const checkfunction = (data) => {
-    console.log(data)
     if (typeof reciveMail === "function") {
-        reciveMail(data);
+      reciveMail(data);
     }
   };
 
+  const checkfunctionpage = (data) => {
+    if (typeof pageswap === "function") {
+      pageswap(data);
+    }
+  };
+  const togglePassword = (e) => {
+    e.preventDefault();
+    setPasswordShown(!passwordShown);
+  };
+
   return (
-    <div className="form-frame">
-          <form className="form">
-            <div className="form">
-              <label className="label">
-                email
-                <div>
-                  <input
-                    onChange={(e) => checkfunction(e.target.value)}
-                    className="input"
-                    placeholder="Enter your email"
-                  ></input>
-                </div>
-              </label>
-              <br></br>
-              <label className="label">
-                password
-                <div>
-                  <img  src={eye} className="eye-logo" alt="eye" />
-                  <input type ="password"
-                    {...connectPassword}
-                    className="input"
-                    placeholder="Enter your password"
-                  ></input>
-                </div>
-              </label>
-              <div className="validation-text">
-                <p>{connectPassword.msgletter}</p>
-                <p>{connectPassword.msgnum}</p>
-                <p>{connectPassword.msglenght}</p>
+    <div>
+      <div className="header-frame">
+        <p className="font--header">
+          Ahoy you! Care to register?
+          {/* <p className="font--header" style={{ color: "grey" }}>
+              Care to register?
+            </p> */}
+        </p>
+      </div>
+      <div className="form-frame">
+        <form className="form">
+          <div className="form">
+            <label className="label">
+              email
+              <div>
+                <input
+                  onChange={(e) => checkfunction(e.target.value)}
+                  className="input"
+                  placeholder="Enter your email"
+                ></input>
               </div>
+            </label>
+            <br></br>
+            <label className="label">
+              password
+              <div>
+                <input
+                  type={passwordShown ? "text" : "password"}
+                  {...connectPassword}
+                  className="input"
+                  placeholder="Enter your password"
+                ></input>
+                <img
+                  src={eye}
+                  className="eye-logo"
+                  alt="eye"
+                  onClick={(e) => togglePassword(e)}
+                />
+              </div>
+            </label>
+            <div className="validation-text">
+              <p>{connectPassword.msgletter}</p>
+              <p>{connectPassword.msgnum}</p>
+              <p>{connectPassword.msglenght}</p>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
+      </div>
+      <div className="buttons-frame">
+        <button
+          disabled={
+            connectPassword.msgletter ||
+            connectPassword.msgnum ||
+            connectPassword.msglenght ||
+            password == "" ||
+            mail == ""
+              ? true
+              : false
+          }
+          onClick={checkfunctionpage}
+          className="button-next"
+        >
+          Next Step
+        </button>
+
+        <a href="#" className="button-login">
+          Login instead
+        </a>
+      </div>
+    </div>
   );
 }
 

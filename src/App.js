@@ -2,35 +2,37 @@ import logo from "./assets/logo.svg";
 import eye from "./assets/eye.svg";
 import "./css/App.css";
 import "./css/Buttons.css";
+import "./css/Text.css";
 import React, { useEffect, useState } from "react";
 import usePasswordValidtor from "./hooks/hooks.js";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
+import Page3 from "./Page3";
 
 function App() {
   const [page, setPage] = useState(1);
   const [pagename, setPageName] = useState("Next Step");
   const [mail, setMail] = useState("");
+  const [name, setName] = useState("");
 
   function reciveMail(obj) {
     setMail(obj);
   }
+  function reciveName(obj) {
+    setName(obj);
+  }
+  let page1 = page === 1 ? false : true;
+  let page2 = page === 2 ? false : true;
+  let page3 = page === 3 ? false : true;
 
-  function PageName(page, pagename) {
+  function pageswap(data) {
     setPage((prev) => prev + 1);
-    if (page == 1) {
-      setPageName("Register");
-    } else if (page == 2) {
-      setPageName("Go to Homepage");
+    if (data == 0) {
+      setPage(1);
     }
   }
 
-  let page1 = page == 1 ? "true" : "none";
-  let page2 = page == 2 ? "true" : "none";
-  let page3 = page == 3 ? "true" : "none";
-  useEffect(() => {
-    console.log(page2)
-  }, [page]);
+  useEffect(() => {}, [page]);
 
   return (
     <div className="App">
@@ -41,39 +43,28 @@ function App() {
       </div>
 
       <div className="body-frame">
-        <div className="header-frame">
-          <p className="font--header">
-            Ahoy you! Care to register?
-            {/* <p className="font--header" style={{ color: "grey" }}>
-              Care to register?
-            </p> */}
-          </p>
+        <div hidden={page != 1}>
+          <Page1 reciveMail={reciveMail} pageswap={pageswap} mail={mail}></Page1>
         </div>
-        <div style={{ display: page1 }}>
-          <Page1 reciveMail={reciveMail}></Page1>
+        <div hidden={page != 2}>
+          <Page2 reciveName={reciveName} pageswap={pageswap} name={name}></Page2>
         </div>
-        <div style={{ display: page2 }}>
-          <Page2></Page2>
+        <div hidden={page != 3}>
+          <Page3 mail={mail} name={name} pageswap={pageswap}></Page3>
         </div>
-
-        <div className="buttons-frame">
+        {/* <div className="buttons-frame">
           <button
             className="button-next"
             onClick={() => PageName(page, pagename)}
           >
             {pagename}
           </button>
-          {/* <div className="next-frame">
-            <p className="next-text">Next Step</p>
-          </div> */}
+
           <a href="#" className="button-login">
             Login instead
           </a>
-          {/* <div className="login-frame">
-          
-            <p className="login-text">Login instead</p>
-          </div> */}
-        </div>
+
+        </div> */}
       </div>
     </div>
   );
