@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 pull repo wiith git
 next use comand:
 ```
-`yarn start`
+yarn start
 ```
 wich
 Runs the app in the development mode.\
