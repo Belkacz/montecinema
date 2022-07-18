@@ -1,7 +1,6 @@
 import logo from "./assets/logo.svg";
 import eye from "./assets/eye.svg";
-import React, { useEffect, useState } from "react";
-import { useAgeValidtor } from "./hooks/hooks.js";
+import React, { useEffect, useState } from "react"
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 
 function Page2({ reciveName, pageswap, name }) {

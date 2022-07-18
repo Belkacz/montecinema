@@ -159,7 +159,7 @@ body-frame {
     gap: 40px;
 
     width: 600px;
-    height: 500px;
+    height: 510px;
 
     /* Other / Snow White */
     background: #ffffff;
@@ -207,6 +207,7 @@ body-frame {
   }
   .input {
     width: 20em;
+    height: 25px;
   }
   .header-frame {
   }

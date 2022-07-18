@@ -37,9 +37,6 @@ function Page1({ reciveMail, pageswap, mail }) {
       <div className="header-frame">
         <p className="font-header">
           Ahoy you! Care to register?
-          {/* <p className="font--header" style={{ color: "grey" }}>
-              Care to register?
-            </p> */}
         </p>
       </div>
       <div className="form-frame">
