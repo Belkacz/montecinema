@@ -1,88 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@400;700&display=swap");
 .validation-text {
-  width: 140px;
-  height: 24px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 170%;
-  /* identical to box height, or 24px */
-  letter-spacing: 0.04em;
-
-  /* Gray / Tuna */
-  color: #343541;
-}
-
-.next-text {
-  width: 100px;
-  height: 18px;
-  margin-left: 10%;
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 100%;
-  /* identical to box height, or 18px */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.015em;
-
-  /* Other / Snow White */
-  color: #ffffff;
-}
-
-.login-text {
-  width: 155px;
-  height: 18px;
-
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 100%;
-  /* identical to box height, or 18px */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.015em;
-
-  /* Red / Cherry Red */
-  color: #ec1115;
-}
-
-.chaeckboxText {
-  /* Full month */
-
-  width: 300px;
-  height: 21px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
-
-  /* Gray / Charade */
-  color: #292a33;
-}
-
-.text18px {
-  /* We have sent you an email to goerogia.swanson@monterail.com. Make sure to click the link from the message to activate your account. */
-
-  width: 327px;
-  height: 84px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-
-  /* Gray / Charade */
-  color: #292a33;
-}
+    width: 140px;
+    height: 24px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    /* identical to box height, or 24px */
+    letter-spacing: 0.04em;
+  
+    /* Gray / Tuna */
+    color: #343541;
+  }
+  
+  .next-text {
+    width: 100px;
+    height: 18px;
+    margin-left: 10%;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+  
+    /* Other / Snow White */
+    color: #ffffff;
+  }
+  
+  
+  .login-text {
+    width: 155px;
+    height: 18px;
+  
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.015em;
+  
+    /* Red / Cherry Red */
+    color: #ec1115;
+  }
+  
+  .chaeckboxText {
+    /* Full month */
+  
+    width: 300px;
+    height: 21px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+    /* Gray / Charade */
+    color: #292a33;
+  }
+  
+  
+  .text18px {
+    /* We have sent you an email to goerogia.swanson@monterail.com. Make sure to click the link from the message to activate your account. */
+  
+    width: 327px;
+    height: 84px;
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+  
+    /* Gray / Charade */
+    color: #292a33;
+  }
+  

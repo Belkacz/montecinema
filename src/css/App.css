@@ -1,14 +1,12 @@
 .App {
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 0px 80px;
 
-  width: 375px;
-  height: 900px;
-
   /* Other / Snow White */
-  background: #ffffff;
+
   border-radius: 32px;
 }
 
@@ -40,7 +38,7 @@
 }
 
 .App-logo {
-  margin-left: 25%;
+  margin-left: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,8 +48,27 @@
   height: 37.24px;
 }
 
+.Logo-txt {
+  /* Developed with ♥ by Monterail */
+  display: none;
+  width: 299px;
+  height: 21px;
+
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* Gray / Tuna */
+  color: #343541;
+}
+
 .header-frame {
-  width: 302px;
+
   height: 82px;
 
   font-family: "Eczar";
@@ -67,7 +84,8 @@
   color: #343541;
 }
 
-.font--header {
+.font-header {
+  margin-top: 220px;
   width: 302px;
   height: 82px;
 
@@ -92,14 +110,11 @@
   padding: 0px;
   gap: 24px;
 
-  width: 327px;
   margin-bottom: auto;
 }
 .label {
   /* Label */
   border: 0px;
-  width: 280px;
-  height: px;
 
   font-family: "Roboto Mono";
   font-style: normal;
@@ -121,7 +136,6 @@
   gap: 10px;
 
   width: 260px;
-  height: px;
 
   /* Gray / Athens Gray */
   background: #f7f7f7;
@@ -144,8 +158,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-
-  width: 327px;
   height: 86px;
 
   /* Inside auto layout */
@@ -159,7 +171,7 @@
   /* view-1 */
   display: flex;
   position: relative;
-  margin-left: 75%;
+  margin-left: 80%;
   margin-top: -50px;
   width: 32px;
   height: 32px;
@@ -192,11 +204,9 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  gap: 10px;
 
-  width: 300px;
-  height: 30px;
-
+  /* Auto layout */
+  display: flex;
   /* Red / Cherry Red */
   background: #ec1115;
   border-radius: 64px;
@@ -226,4 +236,45 @@
   width: 300px;
   height: 24px;
   /* Frame 105 */
+}
+
+@media only screen and (min-width: 600px) {
+  .body-frame {
+    width: 900px;
+
+  }
+  .header-frame {
+    margin-top: 450px;
+    margin-left: -60px;
+  }
+  .font-header {
+
+    margin-top: 150px;
+    width: 564px;
+    height: 164px;
+    font-size: 80px;
+  }
+  .Logo-txt {
+    display: flex;
+  }
+  .App-logo {
+    position: relative;
+    margin-left: -450px;
+  }
+  .App-header {
+    margin-top: 2em;
+  }
+  .form-frame {
+    margin-top: 150px;
+  }
+  .buttons-frame{
+    flex-direction: row;
+    width: 400px;
+  }
+  .input{
+    width: 350px;
+  }
+  .eye-logo{
+    margin-left: 70%;
+  }
 }

@@ -36,9 +36,10 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div >
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+         <p className="Logo-txt">Developed with ♥ by Monterail</p>
         </header>
       </div>
 

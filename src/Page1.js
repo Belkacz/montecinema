@@ -35,7 +35,7 @@ function Page1({ reciveMail, pageswap, mail }) {
   return (
     <div>
       <div className="header-frame">
-        <p className="font--header">
+        <p className="font-header">
           Ahoy you! Care to register?
           {/* <p className="font--header" style={{ color: "grey" }}>
               Care to register?

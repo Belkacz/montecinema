@@ -48,7 +48,7 @@ function Page2({ reciveName, pageswap, name }) {
   return (
     <div>
       <div className="header-frame">
-        <p className="font--header">Great! Now your name</p>
+        <p className="font-header">Great! Now your name</p>
       </div>
       <div className="form-frame">
         <form className="form">
