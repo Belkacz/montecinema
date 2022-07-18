@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 
 function UserDataPage({ reciveName, pageswap, name }) {
@@ -50,7 +50,9 @@ function UserDataPage({ reciveName, pageswap, name }) {
   return (
     <div>
       <div className="header-frame">
-        <p className="font-header">Great! Now your name</p>
+        <p className="font-header">
+          Great! <p id="breaklinetitle">Now your name</p>
+        </p>
       </div>
       <div className="form-frame">
         <form className="form">
@@ -110,7 +112,9 @@ function UserDataPage({ reciveName, pageswap, name }) {
                   }}
                   className="checkbox"
                 ></input>
-                <label className="label">I accept Privacy Policy</label>
+                <label className="chaeckboxText">
+                  I accept <u>Privacy Policy</u>
+                </label>
               </div>
             </div>
           </div>

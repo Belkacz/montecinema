@@ -36,7 +36,7 @@ function RegistarionPage({ reciveMail, pageswap, mail }) {
     <div>
       <div className="header-frame">
         <p className="font-header">
-          Ahoy you! Care to register?
+          Ahoy you! <p id="breaklinetitle">Care to register?</p>
         </p>
       </div>
       <div className="form-frame">

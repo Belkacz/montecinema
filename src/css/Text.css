@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@400;700&display=swap");
+#breaklinetitle {
+  margin: 0px;
+  padding: 0px;
+  color: grey;
+}
+
 .validation-text {
   display: flex;
   flex-direction: column;
@@ -56,11 +62,6 @@
 }
 
 .chaeckboxText {
-  /* Full month */
-
-  width: 300px;
-  height: 21px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -89,8 +90,9 @@
   color: #292a33;
 }
 
+
 @media only screen and (min-width: 1000px) {
-  .text18px{
+  .text18px {
     margin-left: -500px;
   }
 }

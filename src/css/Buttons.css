@@ -53,19 +53,13 @@
 }
 
 .checkbox {
-  /* Frame 105 */
 
   box-sizing: border-box;
-
+  
   width: 24px;
   height: 24px;
 
-  /* Gray / Bombay */
   border: 0.75px solid #aeaeb3;
   border-radius: 8px;
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
