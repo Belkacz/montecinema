@@ -3,7 +3,7 @@ import eye from "../assets/eye.svg";
 import React, { useState, useEffect } from "react";
 import { usePasswordValidtor } from "../hooks/hooks.js";
 
-function Page1({ reciveMail, pageswap, mail }) {
+function RegistarionPage({ reciveMail, pageswap, mail }) {
   let regexletter = /[a-z]/gi;
   let regexnum = /[0-9]/gi;
   let minlenght = 8;
@@ -109,4 +109,4 @@ function Page1({ reciveMail, pageswap, mail }) {
   );
 }
 
-export default Page1;
+export default RegistarionPage;

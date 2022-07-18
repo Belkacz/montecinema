@@ -5,9 +5,9 @@ import "./css/Buttons.css";
 import "./css/Text.css";
 import React, { useEffect, useState } from "react";
 import usePasswordValidtor from "./hooks/hooks.js";
-import Page1 from "./components/RegistarionPage";
-import Page2 from "./components/UserDataPage";
-import Page3 from "./components/ConfirmPage";
+import RegistarionPage from "./components/RegistarionPage";
+import UserDataPage from "./components/UserDataPage";
+import ConfirmPage from "./components/ConfirmPage";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -43,21 +43,25 @@ function App() {
       <div className="body-frame">
         <div className="popup">
           <div hidden={page != 1}>
-            <Page1
+            <RegistarionPage
               reciveMail={reciveMail}
               pageswap={pageswap}
               mail={mail}
-            ></Page1>
+            ></RegistarionPage>
           </div>
           <div hidden={page != 2}>
-            <Page2
+            <UserDataPage
               reciveName={reciveName}
               pageswap={pageswap}
               name={name}
-            ></Page2>
+            ></UserDataPage>
           </div>
           <div hidden={page != 3}>
-            <Page3 mail={mail} name={name} pageswap={pageswap}></Page3>
+            <ConfirmPage
+              mail={mail}
+              name={name}
+              pageswap={pageswap}
+            ></ConfirmPage>
           </div>
         </div>
       </div>

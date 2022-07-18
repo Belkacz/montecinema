@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 
-function Page2({ reciveName, pageswap, name }) {
+function UserDataPage({ reciveName, pageswap, name }) {
   let minAge = 18;
   const [firstname, setFName] = useState("");
   const [lastname, setLName] = useState("");
@@ -141,4 +141,4 @@ function Page2({ reciveName, pageswap, name }) {
   );
 }
 
-export default Page2;
+export default UserDataPage;

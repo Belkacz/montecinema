@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Page3({ mail, name, pageswap }) {
+function ConfirmPage({ mail, name, pageswap }) {
   const checkfunctionpage = (data) => {
     if (typeof pageswap === "function") {
       pageswap(0);
@@ -27,4 +27,4 @@ function Page3({ mail, name, pageswap }) {
     </div>
   );
 }
-export default Page3;
+export default ConfirmPage;
