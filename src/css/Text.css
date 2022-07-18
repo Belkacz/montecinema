@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;400;500&family=Roboto:wght@400;700&display=swap");
 
-#breaklinetitledark{
+#break-line-title-dark {
   margin: 0px;
   padding: 0px;
 }
-#breaklinetitlelight {
+#break-line-title-light {
   margin: 0px;
   padding: 0px;
   color: grey;
@@ -62,20 +62,17 @@
 }
 
 .chaeckboxText {
-  margin:auto;
+  margin: auto;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-
-  /* identical to box height */
 
   /* Gray / Charade */
   color: #292a33;
 }
 
 .text18px {
-
   width: 327px;
   font-family: "Roboto";
   font-style: normal;

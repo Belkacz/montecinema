@@ -112,7 +112,7 @@
     flex-direction: row;
   }
   .App-header {
-    gap: 500px;
+    gap: 200px;
   }
   .validation-frame {
     margin-left: 7em;
@@ -131,7 +131,7 @@
     margin-left: 25px;
     gap: 900px;
   }
-  .popup{
-    padding: 64px;
+  .popup {
+    padding: 70px;
   }
 }
