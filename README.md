@@ -13,6 +13,6 @@ Runs the app in the development mode.\
 browser shoud automaticly open at local host if not just wich
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-##About
+## How its works
 when Registration form is open, move forward by using red button on the bootm.
 Be sure you fulfill all conditions needed to move if you miss something, like empty window, checkbox etc. button will stay bloked.
