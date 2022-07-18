@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Installation
 pull repo wiith git
 next use comand:
-#yarn
-### `yarn start`
+```
+`yarn start`
+```
 wich
 Runs the app in the development mode.\
 browser shoud automaticly open at local host if not just wich
