@@ -92,7 +92,7 @@
 
 @media only screen and (min-width: 1000px) {
   .popup {
-    padding: 64px;
+    padding: 25px;
     background: #ffffff;
     box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
     border-radius: 25px;
@@ -130,5 +130,8 @@
   .App-header {
     margin-left: 25px;
     gap: 900px;
+  }
+  .popup{
+    padding: 64px;
   }
 }
