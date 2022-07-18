@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   padding: 0px, 0px, 80px;
-  width: 375px;
-  height: 900px;
   border-radius: 32px;
   margin: auto;
 }
@@ -13,11 +11,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 24px;
   gap: 895px;
-  width: 375px;
-  height: 98px;
-  margin-left: 200px;
+  padding: 20px;
 }
 .Logo-txt {
   display: none;
@@ -67,7 +62,6 @@
   padding: 24px;
   gap: 10px;
   width: 320px;
-  height: 56px;
 
   /* Gray / Athens Gray */
   background: #f7f7f7;
@@ -79,8 +73,6 @@
   gap: 8px;
 
   /* Input text */
-
-  height: 21px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -103,17 +95,13 @@
 }
 
 .buttons-frame {
-  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.validation-frame {
-  width: 140px;
-  height: 70px;
-  margin-bottom: 5em;
+.chackboxframe {
+  padding: 0px 0px 20px 0px;
 }
-
 
 .popup {
   display: none;
@@ -130,17 +118,11 @@
     align-items: flex-start;
     padding: 64px;
     gap: 40px;
-
-    width: 600px;
-    height: 520px;
-
     background: #ffffff;
     box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
     border-radius: 24px;
   }
   .header-frame {
-    width: 603px;
-    height: 164px;
     margin-left: -10px;
     font-family: "Eczar";
     font-style: normal;
@@ -159,30 +141,25 @@
   .Logo-txt {
     display: flex;
     flex-direction: row;
-    width: 200px;
   }
   .App-header {
-    gap: 30em;
-    margin-left: -500px;
+    gap: 500px;
   }
   .validation-frame {
     margin-left: 7em;
-  }
-  .chackboxframe {
-    margin-top: -6em;
   }
   .buttons-frame {
     flex-direction: row;
   }
   .input {
     width: 20em;
-    height: 25px;
+    padding: 5px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .App-header {
-    gap: 40em;
-    margin-left: -550px;
+    margin-left: 25px;
+    gap: 900px;
   }
 }
