@@ -36,36 +36,33 @@ function App() {
 
   return (
     <div className="App">
-      <div >
+      <div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-         <p className="Logo-txt">Developed with ♥ by Monterail</p>
+          <p className="Logo-txt">Developed with ♥ by Monterail</p>
         </header>
       </div>
 
       <div className="body-frame">
-        <div hidden={page != 1}>
-          <Page1 reciveMail={reciveMail} pageswap={pageswap} mail={mail}></Page1>
+        <div className="popup">
+          <div hidden={page != 1}>
+            <Page1
+              reciveMail={reciveMail}
+              pageswap={pageswap}
+              mail={mail}
+            ></Page1>
+          </div>
+          <div hidden={page != 2}>
+            <Page2
+              reciveName={reciveName}
+              pageswap={pageswap}
+              name={name}
+            ></Page2>
+          </div>
+          <div hidden={page != 3}>
+            <Page3 mail={mail} name={name} pageswap={pageswap}></Page3>
+          </div>
         </div>
-        <div hidden={page != 2}>
-          <Page2 reciveName={reciveName} pageswap={pageswap} name={name}></Page2>
-        </div>
-        <div hidden={page != 3}>
-          <Page3 mail={mail} name={name} pageswap={pageswap}></Page3>
-        </div>
-        {/* <div className="buttons-frame">
-          <button
-            className="button-next"
-            onClick={() => PageName(page, pagename)}
-          >
-            {pagename}
-          </button>
-
-          <a href="#" className="button-login">
-            Login instead
-          </a>
-
-        </div> */}
       </div>
     </div>
   );

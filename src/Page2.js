@@ -53,6 +53,7 @@ function Page2({ reciveName, pageswap, name }) {
       <div className="form-frame">
         <form className="form">
           <div className="form">
+          <div className="input-frame">
             <label className="label">
               First Name
               <div>
@@ -63,7 +64,9 @@ function Page2({ reciveName, pageswap, name }) {
                 ></input>
               </div>
             </label>
+            </div>
             <br></br>
+            <div className="input-frame">
             <label className="label">
               Last Name
               <div>
@@ -74,7 +77,9 @@ function Page2({ reciveName, pageswap, name }) {
                 ></input>
               </div>
             </label>
+            </div>
             <br></br>
+            <div className="input-frame">
             <label className="label">
               Date of Birth
               <div>
@@ -87,9 +92,13 @@ function Page2({ reciveName, pageswap, name }) {
                 ></input>
               </div>
             </label>
+            </div>
+            <div className="validation-frame">
             <div className="validation-text">
               <p>{msg}</p>
             </div>
+            </div>
+            <div className="input-frame">
             <div className="chackboxframe">
               <input
                 value={age}
@@ -99,6 +108,8 @@ function Page2({ reciveName, pageswap, name }) {
               ></input>
               <label className="label">I accept Privacy Policy</label>
             </div>
+            </div>
+            
           </div>
         </form>
       </div>

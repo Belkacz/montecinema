@@ -1,27 +1,3 @@
-.App {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 0px 80px;
-
-  /* Other / Snow White */
-
-  border-radius: 32px;
-}
-
-.body-frame {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 64px, 24px, 32px;
-  gap: 48px;
-  width: 375px;
-  height: 678px;
-}
-
 .App-header {
   display: flex;
   flex-direction: row;
@@ -29,48 +5,30 @@
   align-items: center;
   padding: 0px 24px;
   gap: 895px;
-
   width: 375px;
   height: 98px;
-
-  /* Other / Snow White */
-  background: #ffffff;
+  margin: auto;
+  margin-left: 5em;
 }
-
-.App-logo {
-  margin-left: 100px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 5px;
-  width: 182.6px;
-  height: 37.24px;
-}
-
 .Logo-txt {
-  /* Developed with ♥ by Monterail */
   display: none;
   width: 299px;
   height: 21px;
-
+  white-space: nowrap;
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  text-align: right;
+  text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  /* Gray / Tuna */
-  color: #343541;
 }
 
 .header-frame {
-
+  /* Great! Now your name */
+  width: 282px;
   height: 82px;
-
   font-family: "Eczar";
   font-style: normal;
   font-weight: 600;
@@ -80,41 +38,22 @@
   text-align: center;
   letter-spacing: -0.01em;
 
+  margin-left: 1em;
   /* Gray / Tuna */
   color: #343541;
 }
-
-.font-header {
-  margin-top: 220px;
-  width: 302px;
-  height: 82px;
-
-  font-family: "Eczar";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 102%;
-  /* or 41px */
-  text-align: center;
-  letter-spacing: -0.01em;
-
-  /* Gray / Tuna */
-  color: #343541;
-}
-
-.form-frame {
-  /* Auto layout */
+body-frame {
+  flex-direction: ;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-
-  margin-bottom: auto;
+  width: auto;
 }
+
 .label {
   /* Label */
-  border: 0px;
+
+  width: 85px;
+  height: 18px;
 
   font-family: "Roboto Mono";
   font-style: normal;
@@ -126,20 +65,38 @@
   /* Red / Bittersweet */
   color: #f47073;
 }
+.input-frame {
+  margin-left: 1em;
 
+  gap: 12px;
+}
 .input {
+  /* Frame 2 */
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 24px;
   gap: 10px;
-
-  width: 260px;
+  width: 320px;
+  height: 56px;
 
   /* Gray / Athens Gray */
   background: #f7f7f7;
   border-radius: 8px;
+
+  /* Frame 102 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  /* Input text */
+
+  height: 21px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -151,130 +108,116 @@
   /* Gray / Jumbo */
   color: #85868d;
 }
-.form {
-  /* Auto layout */
-  display: block;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-  height: 86px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .eye-logo {
-  /* view-1 */
   display: flex;
   position: relative;
-  margin-left: 80%;
-  margin-top: -50px;
-  width: 32px;
-  height: 32px;
-}
-
-.login-frame {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  gap: 10px;
-
-  width: 290px;
-  height: 0px;
-
-  border-radius: 64px;
-
-  /* Inside auto layout */
-  flex: none;
   order: 1;
-  align-self: stretch;
+  flex: none;
   flex-grow: 0;
-}
-
-.next-frame {
-  margin-top: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-
-  /* Auto layout */
-  display: flex;
-  /* Red / Cherry Red */
-  background: #ec1115;
-  border-radius: 64px;
+  float: right;
+  margin-right: 1em;
+  margin-top: -2em;
 }
 
 .buttons-frame {
-  margin-top: 310px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.validation-frame {
+  /* Frame 209 */
+
+  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 
-  width: 327px;
-  height: 380px;
+  width: 140px;
+  height: 70px;
+  margin-bottom: 5em;
 }
 
-.chackboxframe {
-  /* checkbox */
-
+.popup {
+  display: none;
   /* Auto layout */
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 12px;
-
-  width: 300px;
-  height: 24px;
-  /* Frame 105 */
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 35px;
 }
 
-@media only screen and (min-width: 600px) {
-  .body-frame {
-    width: 900px;
+@media only screen and (min-width: 1000px) {
+  .popup {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 64px;
+    gap: 40px;
 
+    width: 600px;
+    height: 500px;
+
+    /* Other / Snow White */
+    background: #ffffff;
+    box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+    border-radius: 24px;
   }
   .header-frame {
-    margin-top: 450px;
-    margin-left: -60px;
-  }
-  .font-header {
-
-    margin-top: 150px;
-    width: 564px;
+    width: 603px;
     height: 164px;
+    margin-left: -10px;
+    font-family: "Eczar";
+    font-style: normal;
+    font-weight: 600;
     font-size: 80px;
+    line-height: 102%;
+    /* or 82px */
+    letter-spacing: -0.01em;
+  }
+  .form-frame {
+    margin-left: auto;
+  }
+  .input-frame {
+    margin-left: 8em;
+  }
+  .eye-logo {
+    margin-right: 12em;
   }
   .Logo-txt {
     display: flex;
-  }
-  .App-logo {
-    position: relative;
-    margin-left: -450px;
+    flex-direction: row;
+    width: 200px;
   }
   .App-header {
-    margin-top: 2em;
+    margin-left: 1em;
+    gap: 30em;
   }
-  .form-frame {
-    margin-top: 150px;
+  .validation-frame {
+    margin-left: 7em;
   }
-  .buttons-frame{
+  .chackboxframe {
+    margin-top: -6em;
+  }
+  .buttons-frame {
     flex-direction: row;
-    width: 400px;
   }
-  .input{
-    width: 350px;
+  .input {
+    width: 20em;
   }
-  .eye-logo{
-    margin-left: 70%;
+  .header-frame {
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .popup {
+    margin-left: 400px;
+  }
+  .App-header {
+    margin-left: 15em;
+    gap: 40em;
   }
 }
