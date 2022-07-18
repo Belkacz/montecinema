@@ -3,8 +3,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
+
 clone repo with git, go into directiony
-next use comand:
+```
+git clone https://github.com/Belkacz/montecinema.git
+```
+next install yarn:
+```
+install yarn
+```
+next use command:
 ```
 yarn start
 ```
