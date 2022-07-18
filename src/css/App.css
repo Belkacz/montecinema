@@ -50,19 +50,8 @@
   /* Gray / Tuna */
   color: #343541;
 }
-body-frame {
-  flex-direction: ;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-}
 
 .label {
-  /* Label */
-
-  width: 85px;
-  height: 18px;
-
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 700;
@@ -92,12 +81,8 @@ body-frame {
   border-radius: 8px;
 
   /* Frame 102 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 2px;
   gap: 8px;
 
   /* Input text */
@@ -115,14 +100,13 @@ body-frame {
   color: #85868d;
 }
 .eye-logo {
-  display: flex;
   position: relative;
   order: 1;
   flex: none;
   flex-grow: 0;
   float: right;
   margin-right: 1em;
-  margin-top: -2em;
+  margin-top: -30px;
 }
 
 .buttons-frame {
@@ -132,14 +116,6 @@ body-frame {
   align-items: center;
 }
 .validation-frame {
-  /* Frame 209 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
   width: 140px;
   height: 70px;
   margin-bottom: 5em;
@@ -157,16 +133,13 @@ body-frame {
 
 @media only screen and (min-width: 1000px) {
   .popup {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     padding: 64px;
     gap: 40px;
 
     width: 600px;
-    height: 510px;
+    height: 520px;
 
-    /* Other / Snow White */
     background: #ffffff;
     box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
     border-radius: 24px;
@@ -182,9 +155,6 @@ body-frame {
     line-height: 102%;
     /* or 82px */
     letter-spacing: -0.01em;
-  }
-  .form-frame {
-    margin-left: auto;
   }
   .input-frame {
     margin-left: 8em;
