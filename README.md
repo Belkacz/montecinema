@@ -1,7 +1,7 @@
-## [Peview](https://montecinema.vercel.app/)
+## [Peview](https://omdb-react-redux.vercel.app/)
 
 ```
-https://montecinema.vercel.app/
+https://omdb-react-redux.vercel.app/
 ```
 
 
