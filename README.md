@@ -1,7 +1,7 @@
-# [Peview](montecinema-ffzrp9l4d-belkacz.vercel.app)
+# [Peview]((https://montecinema.vercel.app/)
 
 ```
-montecinema-ffzrp9l4d-belkacz.vercel.app
+https://montecinema.vercel.app/
 ```
 
 ## Installation
