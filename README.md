@@ -1,7 +1,7 @@
-# [Peview](https://omdb-react-redux.vercel.app/)
+# [Peview](montecinema-ffzrp9l4d-belkacz.vercel.app)
 
 ```
-https://omdb-react-redux.vercel.app/
+montecinema-ffzrp9l4d-belkacz.vercel.app
 ```
 
 ## Installation
